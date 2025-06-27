@@ -1,0 +1,276 @@
+body{
+    background: #000;
+    color: white;
+}
+.main{
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: 1px solid  rgb(221, 7, 221);
+}
+.intro{
+    margin-top: 90px;
+}
+.intro h1{
+    font-size: 50px;
+    font: bold;
+}
+.intro span{
+    color: rgb(221, 7, 221);
+}
+.like{
+    border: 1px solid  rgb(221, 7, 221);
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+}
+.intro  button{
+    font-size: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid black;
+}
+.intro button i:hover{
+    cursor: pointer;
+    color: rgb(221, 7, 221) ;
+}
+.likeCount{
+    font-size: 40px;
+}
+.about{
+    display: flex;
+    padding: 20px; 
+    border-bottom: 1px solid  rgb(221, 7, 221);   
+}
+.photo{
+    padding: 0px;
+    flex: 1;
+    justify-items: center;
+}
+.photo img{
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+.space{
+    padding: 20px;
+    flex: 1; 
+}
+.space p{
+    text-align: center;
+}
+.head{
+    text-align: center;
+    color:  rgb(221, 7, 221);
+    font-size: 20px;
+}
+.spec{
+    text-align: center;
+    color: rgb(221, 7, 221);
+    padding: 20px;
+}
+.web{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+.html{
+    width: 300px;
+    background: #000;
+    text-align: center;
+    justify-content: space-between;
+    color:rgb(221, 7, 221) ;
+    border: 1px solid;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.projects{
+    padding: 20px;
+    border-bottom: 1px solid  rgb(221, 7, 221);
+}
+.projects h1{
+    text-align: center;
+    color: rgb(221, 7, 221) ;
+    font-size: 40px;
+}
+.projects h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.projects img:hover{
+    transform: scale(2.5);
+    border-radius: 20px;
+    transition:all 1s ease-in-out ;
+    cursor: crosshair;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.flexes1{
+    width: 300px;
+    height: 500px;
+    color:  rgb(221, 7, 221);
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(32, 29, 29);
+}
+.flexes{
+    width: 300px;
+    height: 500px;
+    color:rgb(32, 29, 29) ;
+    text-align: center;
+    border-radius: 20px;
+    background-color:  rgb(221, 7, 221);
+}
+.view1 button{
+    background:rgb(221, 7, 221) ;
+    color: white;
+    border:1px solid black ;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 100px;
+}
+.view button{
+    background:  rgb(32, 29, 29);
+    color: white;
+    border:1px solid black ;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 100px;
+    
+}
+.flex button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.add{
+    width: 600px;
+    justify-self: center;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(black,  rgb(221, 7, 221)) ;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgb(221, 7, 221);
+}
+.add a{
+    text-decoration-line: none;
+    color:  rgb(255, 255, 255);
+}
+.add:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.skills{
+    padding: 20px;
+    border-bottom: 1px solid  rgb(221, 7, 221);
+}
+.skills h1{
+    text-align: center;
+    color: rgb(221, 7, 221) ;
+    font-size: 40px;
+}
+.skills h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.dem{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sub-skills1{
+    cursor: pointer;
+    width: 300px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(32, 29, 29);
+    color:  rgb(221, 7, 221);
+}
+.sub-skills2{
+    cursor: pointer;
+    width: 300px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(32, 29, 29);
+    color: rgb(221, 7, 221) ;
+}
+.dem i{
+    color: rgb(221, 7, 221);
+    font-size: 25px;
+}
+.dem i:hover{
+    transform: scale(1.1);
+}
+.contact{
+    padding: 20px;
+}
+.contact h1{
+    color:  rgb(221, 7, 221);
+    font-size: 30px;
+    text-align: center;
+}
+.last i{
+    font-size: 25px;
+    color:rgb(221, 7, 221) ;
+}
+.contact h4{
+    text-align: center;
+    margin-top: 40px;
+}
+.piece{
+    margin: 20px;
+}
+.last{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.last1{
+    justify-content: left;
+    flex: 1;
+}
+.anime{
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+}
+.dis{
+    justify-self: center;
+    border: 1px solid  rgb(221, 7, 221);
+    background: linear-gradient(black,  rgb(221, 7, 221));
+    width: 100px;
+    height: 100px;
+    animation: move 8s ease  infinite;
+    transition: 3s ease;
+}
+.contact h4{
+    stroke:  rgb(221, 7, 221) ;
+    stroke-width: 2px solid  rgb(221, 7, 221);
+}
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        
+
+    }
+}

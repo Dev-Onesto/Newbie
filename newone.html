@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpace </title>
+    <link rel="stylesheet" href="newone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="intro">
+            <h1>I'm <span>Honest </span><br><span>Hammajoda...</span></h1>
+            <h4>A <span>Front-end Developer</span> with a passion for building clean, responsive <br> and user-friendly interfaces.</h4>
+            <div class="like">
+                 <button id="likeBtn"><i class="fas fa-heart"></i></button>
+                 <span id="likeCount">0</span>
+            </div>
+        </div>
+        <div class="intro-pic">
+            <img src="side.png" alt="">
+        </div>
+    </div>
+    <div class="about">
+        <div class="photo">
+            <img src="honest.png" width="500px" height="700px" alt="">
+        </div>
+        <div class="space">
+            <div class="head">
+                  <h1>About Me</h1>
+            </div>
+            <p> I enjoy crafting intuitive interfaces that not only look good but also function smoothly across devices. My career goal is to become a skilled front-end engineer, mastering modern tools and frameworks, and contributing to impactful projects that solve real-world problems through great design and performance.</p>
+            <div class="spec">
+                <h2>Specialized In...</h2>
+            </div>
+            <div class="web">
+                <div class="html">
+                    <img src="html.png" width="100px" height="100px" alt="">
+                    <h3>HTML <br> (Hypertext Markup Language)</h3>
+                </div>
+                <div class="html">
+                    <img src="css.png" width="190px" height="120px" alt="">
+                    <h3>CSS <br>(Casscading Style Sheet)</h3>
+                </div>
+                <div class="html">
+                    <img src="js.png" width="100px" height="100px" alt="">
+                    <h3>JS <br> (JavaScript)</h3>
+                </div>
+                <div class="html">
+                    <img src="php.png" width="100px" height="130px" alt="">
+                    <h3>PHP <br>(Hypertext Preprocessor) </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1>Projects</h1>
+        <h4>This project showcases my ability to plan, design, and build a functional web interface from start to finish. <br> It reflects my understanding of layout, interactivity, and user experience.</h4>
+        <div class="flex">
+            <div class="flexes1">
+                 <h3>Reg/Login pages</h3>
+                 <img src="reg.jpeg" width="200px" height="110px" alt="">
+                 <h4>Tools used: <br> Html, css, JavaScript and php</h4>
+                 <div class="view1">
+                    <button>View</button>
+                 </div>
+            </div>
+            <div class="flexes">
+                 <h3>Restaurant website</h3>
+                 <img src="restau.jpeg" width="200px" height="110px" alt="">
+                 <h4>Tools used: <br> Html and css</h4>
+                 <div class="view">
+                    <button>View</button>
+                 </div>
+            </div>
+            <div class="flexes1">
+                 <h3>Iphone7 clone</h3>
+                 <img src="iphone.jpeg" width="200px" height="110px" alt="">
+                 <h4>Tools used: <br> Html, css and JavaScript</h4>
+                 <div class="view1">
+                    <button >View</button>
+                 </div>
+            </div>
+        </div>
+        <div class="add">
+            <a href="#">More</a>
+        </div>
+    </div>
+    <div class="skills">
+        <h1>Skills</h1>
+        <h4>Beyond front-end development, I have a growing set of complementary skills that strengthen my overall workflow. <br> These include problem-solving, teamwork, effective communication, and time management.</h4>
+        <div class="dem">
+            <div class="sub-skills1">
+                 <i class="fas fa-code"></i>
+                 <h4>Web Development</h4>
+            </div>
+            <div class="sub-skills2">
+                <i class="fas fa-image"></i>
+                <h4>Photo Editing</h4>
+            </div>
+            <div class="sub-skills1">
+                <i class="fas fa-video"></i>
+                <h4>Video Editing</h4>
+            </div>
+            <div class="sub-skills2">
+                <i class="fas fa-palette"></i>
+                <h4>Graphic Design</h4>
+            </div>
+            <div class="sub-skills1">
+                <i class="fas fa-users"></i>
+                <h4>Social Media Markrting</h4>
+            </div>
+            <div class="sub-skills2">
+                <i class="fas fa-eye"></i>
+                <h4>Online Survey</h4>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="head">
+            <h1>Contact us..</h1>
+        </div>
+        
+        <div class="last">
+            <div class="last1">
+                <div class="piece">
+                     <i class="fa-solid fa-envelope"></i>
+                     <span> info@gmail.com</span>
+                </div>
+                <div class="piece">
+                     <i class="fas fa-phone"></i>
+                     <span> 543-2342-23</span>
+                </div>
+                <div class="piece">
+                     <i class="fab fa-whatsapp"></i>
+                     <span> +44 264-884-23</span>
+                </div>
+                <div class="piece">
+                     <i class="fab fa-linkedin"></i>
+                     <span> @honestHammajoda</span>
+                </div>
+            </div>
+            <div class="anime">
+                <div class="dis"></div>
+            </div>
+        </div> 
+        <h4>Copyright 2025</h4> 
+    </div>
+
+
+    <script>
+        const likeBtn = document.getElementById('likeBtn');
+        const likeCount = document.getElementById('likeCount');
+        let liked = false;
+        let count = 0;
+        
+        likeBtn.addEventListener('click', () => {
+          liked = !liked;
+          likeBtn.classList.toggle('liked', liked);
+          count += liked ? 1 : -1;
+          likeCount.textContent = count;
+        });
+    </script>
+</body>
+</html>
